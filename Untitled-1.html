@@ -1,13 +1,115 @@
-
-
 <!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Progate</title>
+  </head>
+  <body>
+    <h1 class="title">Din Studdybuddy</h1>
+  </body>
+  <div>
+    <label >Årskurs</label>
+    <select name="make" hx-get="/models" hx-target="#models" hx-indicator=".htmx-indicator">
+      <option value="audi">Årskurs 4</option>
+      <option value="toyota">Årskurs 5</option>
+      <option value="bmw">Årskurs 6</option>
+      <option value="bmw">Årskurs 7</option>
+      <option value="bmw">Årskurs 8</option>
+      <option value="bmw">Årskurs 9</option>
+    </select>
+  </div>
+  <div>
+    <label >Ämne</label>
+    <select name="make" hx-get="/models" hx-target="#models" hx-indicator=".htmx-indicator">
+      <option value="audi">Engelska</option>
+      <option value="toyota">Historia</option>
+      <option value="bmw">Tyska</option>
+      <option value="bmw">Biologi</option>
+      <option value="bmw">Fysik</option>
+    </select>
+  </div>
+  <div>
+    <label>Område</label>
+    <select id="models" name="model">
+      <option value="a1">Forntiden i Norden</option>
+      <option value="a1">Vikingatiden och slutet på järnåldern</option>
+      <option value="a1">Det kristna Norden på medeltiden</option>
+      <option value="a1">Livet på medeltiden</option>
+      <option value="a1">De som bestämde på medeltiden</option>
+      <option value="a1">Historia i Europa</option>
+      <option value="a1">Vasatiden och den svenska staten</option>
+      <option value="a1">Stormaktstiden för Östersjöriket Sverige</option>
+      <option value="a1">Sverige på 1700-talet</option>
+      <option value="a1">Sverige på 1800-talet</option>
+      <option value="a1">Nya tider i världen</option>
+      
+      
+    </select>
+</div>
+
+<h5 class="title">Which Viking explorer is believed to have reached <br/>North America before Christopher Columbus?</h5>
+<IMG SRC="image.jpg"  HEIGHT="150" WIDTH="200">
+<form id="checked-contacts">
+    <table>
+      <thead>
+
+      </thead>
+      <tbody id="tbody">
+        <tr class="">
+          <td><input type='checkbox' name='ids' value='0'></td>
+          <td>Leif Erikson</td>
+         
+        </tr>
+        <tr class="">
+          <td><input type='checkbox' name='ids' value='0'></td>
+          <td>Amerigo Vespucci</td>
+        
+        </tr>
+        <tr class="">
+          <td><input type='checkbox' name='ids' value='0'></td>
+          
+          <td>Marco Polo</td>
+        
+        </tr>
+        <tr class="">
+          <td><input type='checkbox' name='ids' value='0'></td>
+          <td>Christopher Columbus</td>
+         
+        </tr>
+        
+      
+      </tbody>
+    </table>
+    <div hx-include="#checked-contacts" hx-target="#tbody">
+      <button class="btn" hx-put="/activate">SEND</button>
+   
+   
+</form>
+<br>
+<br>
+
+<div>
+  <label ><button type="button">Translate text</button></label>
+  <select name="make" hx-get="/models" hx-target="#models" hx-indicator=".htmx-indicator">
+    <option value="audi">Svenska</option>
+    <option value="toyota">Engelska</option>
+    <option value="bmw">Spanska</option>
+    <option value="bmw">Arabiska</option>
+    <option value="bmw">Norska</option>
+    <option value="bmw">Danska</option>
+  </select>
+</div>
+<div>
+  <label ><button type="button">Speaking</button></label>
+  <select name="make" hx-get="/models" hx-target="#models" hx-indicator=".htmx-indicator">
+    <option value="audi">Svenska</option>
+    <option value="toyota">Engelska</option>
+    <option value="bmw">Spanska</option>
+    <option value="bmw">Arabiska</option>
+    <option value="bmw">Norska</option>
+    <option value="bmw">Danska</option>
+  </select>
+</div>
+
+
 </html>
