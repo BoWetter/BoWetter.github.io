@@ -6,7 +6,8 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('image3.png') center / cover no-repeat fixed;
+    /*   background: url('image3.png') center / cover no-repeat fixed;*/
+    background-color: white;  /* Denna rad ändrar bakgrundsfärgen till vit */
 }
 
 /* Variabler */
